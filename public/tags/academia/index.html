@@ -29,7 +29,7 @@
   
     
   
-  <meta name="description" content="Professor of Artificial Intelligence">
+  <meta name="description" content="Laboratorio de Biologia de Sistemas y Medicina Translacional">
 
   
   <link rel="alternate" hreflang="en-us" href="/tags/academia/">
@@ -42,7 +42,7 @@
   
   
   
-  <meta name="theme-color" content="#fc6f5c">
+  <meta name="theme-color" content="#EF525B">
   
 
   
@@ -85,7 +85,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+  <link rel="stylesheet" href="/css/academia.min.6692ab77dffa13fadae957c999cd62ab.css">
 
   
 
@@ -94,8 +94,8 @@
   
 
   
-  <link rel="alternate" href="/tags/academia/index.xml" type="application/rss+xml" title="Academia">
-  <link rel="feed" href="/tags/academia/index.xml" type="application/rss+xml" title="Academia">
+  <link rel="alternate" href="/tags/academia/index.xml" type="application/rss+xml" title="LBSyMT">
+  <link rel="feed" href="/tags/academia/index.xml" type="application/rss+xml" title="LBSyMT">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -109,15 +109,17 @@
   
   
     
-    
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
-  <meta property="og:site_name" content="Academia">
+  <meta property="twitter:site" content="@ltpm_mx">
+  <meta property="twitter:creator" content="@ltpm_mx">
+  
+  <meta property="og:site_name" content="LBSyMT">
   <meta property="og:url" content="/tags/academia/">
-  <meta property="og:title" content="academia | Academia">
-  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="/img/icon-192.png">
-  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="academia | LBSyMT">
+  <meta property="og:description" content="Laboratorio de Biologia de Sistemas y Medicina Translacional"><meta property="og:image" content="/img/grande.jpg">
+  <meta property="twitter:image" content="/img/grande.jpg"><meta property="og:locale" content="en-us">
   
   <meta property="og:updated_time" content="2016-04-20T00:00:00&#43;00:00">
   
@@ -131,7 +133,7 @@
 
 
 
-  <title>academia | Academia</title>
+  <title>academia | LBSyMT</title>
 
 </head>
 
@@ -153,7 +155,8 @@
 
       <div id="search-box">
         
-        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
         
       </div>
 
@@ -174,7 +177,7 @@
   <div class="container">
 
     
-      <a class="navbar-brand" href="/">Academia</a>
+      <a class="navbar-brand" href="/"><img src="/img/grande.jpg" alt="LBSyMT"></a>
       
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
       </button>
@@ -360,6 +363,10 @@
         
 
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
 
         
 
@@ -475,18 +482,52 @@
     
 
     
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
 
     
     
 
     
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
 
     
     
 
     
     
-
     
     
     
@@ -494,12 +535,12 @@
     
     
     
+      
     
     
     
     
-    
-    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
 
     
 
@@ -521,7 +562,7 @@
         </p>
         
         <p>
-          
+          ©2020 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
@@ -543,20 +584,7 @@
           
           
           <li class="list-inline-item">
-            <a href="https://twitter.com/Twitter" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li class="list-inline-item">
-            <a href="skype:echo123?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/lptm_mx" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
           </li>
           
           
@@ -571,22 +599,7 @@
           
           
           <li class="list-inline-item">
-            <a href="https://keybase.io/" target="_blank" rel="noopener" title="Chat on Keybase"><i class="fab fa-keybase" aria-hidden="true"></i></a>
-          </li>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li class="list-inline-item">
-            <a href="https://discourse.gohugo.io" target="_blank" rel="noopener" title="Discuss on Forum"><i class="fas fa-comments" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/LTPMmx/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
           </li>
           
         </ul>
